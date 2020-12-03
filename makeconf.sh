@@ -8,8 +8,8 @@ nobind
 persist-key
 persist-tun
 ca /etc/openvpn/ca.crt
-cert /etc/openvpn/$1.crt
-key /etc/openvpn/$1.key
+cert /etc/openvpn/openvpn-certs/server/easyrsa3/pki/issued/$1.crt
+key /etc/openvpn/openvpn-certs/server/easyrsa3/pki/private/$1.key
 remote-cert-tls server
 tls-auth /etc/openvpn/ta.key 1
 comp-lzo
