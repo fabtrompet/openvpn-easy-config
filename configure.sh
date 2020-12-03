@@ -1,5 +1,3 @@
-rm -rf /etc/openvpn
-mkdir /etc/openvpn
 cp server.conf /etc/openvpn
 cp client.conf /etc/openvpn
 cp mkvpnclient.sh /etc/openvpn
