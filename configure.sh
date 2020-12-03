@@ -4,9 +4,9 @@ cp server.conf /etc/openvpn
 cp client.conf /etc/openvpn
 cp mkvpnclient.sh /etc/openvpn
 cp mkinline.sh /etc/openvpn
-cp /tmp/vpn/openvpn-certs/server/easyrsa3/pki/ca.crt /etc/openvpn/
-cp /tmp/vpn/openvpn-certs/server/easyrsa3/pki/issued/*.crt /etc/openvpn/
-cp /tmp/vpn/openvpn-certs/server/easyrsa3/pki/private/*.key /etc/openvpn/
+cp /etc/openvpn/openvpn-certs/server/easyrsa3/pki/ca.crt /etc/openvpn/
+cp /etc/openvpn/openvpn-certs/server/easyrsa3/pki/issued/*.crt /etc/openvpn/
+cp /etc/openvpn/openvpn-certs/server/easyrsa3/pki/private/*.key /etc/openvpn/
 cd /etc/openvpn/
 openssl dhparam -out dh2048.pem 2048
 openvpn --genkey --secret ta.key
